@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Lista zakupów | Demo</title>
+        <meta name="description" content="demo">
+        <meta name="keywords" content="demo">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <!--<link rel="stylesheet/less" href="css/style.less">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.6.1/less.min.js"></script>-->
+    </head>
+    <body>
+        <header class="header-page">
+            <h1 class="header-title">Moja lista zakupów | Demo</h1>
+        </header>
+        <div class="container">
+            <div class="add-product">
+                <h2 class="title">Dodaj produkt</h2>
+                <div class="inputs">
+                    <p>Nazwa produktu:</p>
+                    <input id="product-name" class="product-name">
+                    <p>Ilość(w szt.):</p>
+                    <input id="product-how_much" class="product-how_much" value="1">
+                    <p>Waga(w gramach):</p>
+                    <input id="product-weight" class="product-weight" value="0">
+                    <button id="btn-add" class="btn-add">Dodaj</button>
+                </div>
+            </div>
+            <div class="product-list">
+                <h2 class="title">Lista produktów</h2>
+                <ul id="products" class="products">
+                </ul>
+            </div>
+        </div>
+        <script src="js/main.js"></script>
+    </body>
+</html>

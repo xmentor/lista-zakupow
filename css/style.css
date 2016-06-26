@@ -1,0 +1,129 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700&subset=latin,latin-ext);
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+  font: 1em Lato, Arial, sans-serif;
+  background: url("../img/restaurant.png") repeat;
+  /* subtlepatterns.com */
+}
+.header-page {
+  margin: 25px 0;
+}
+.header-page .header-title {
+  font-size: 3.500em;
+  font-weight: 700;
+  text-align: center;
+  color: #69a6a2;
+}
+.container {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+.container .title {
+  font-size: 2.000em;
+  padding: 15px 0;
+  color: #b5edea;
+  text-transform: uppercase;
+  background-color: #79AEAB;
+}
+.container .add-product {
+  width: 400px;
+  height: 297px;
+  background-color: #fff;
+  box-shadow: 0 0 15px #555;
+}
+.container .add-product .inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 25px;
+  color: #333;
+}
+.container .add-product .product-name,
+.container .add-product .product-how_much,
+.container .add-product .product-weight {
+  margin-bottom: 5px;
+  padding: 5px 10px;
+  border: 1px solid #7FC5C1;
+  color: #333;
+  -webkit-transition: box-shadow 0.2s ease-out;
+  -moz-transition: box-shadow 0.2s ease-out;
+  -o-transition: box-shadow 0.2s ease-out;
+  -ms-transition: box-shadow 0.2s ease-out;
+  transition: box-shadow 0.2s ease-out;
+}
+.container .add-product .product-name:hover,
+.container .add-product .product-how_much:hover,
+.container .add-product .product-weight:hover,
+.container .add-product .product-name:focus,
+.container .add-product .product-how_much:focus,
+.container .add-product .product-weight:focus {
+  box-shadow: 0 0 3px #7FC5C1;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  -o-transition: box-shadow 0.2s ease-in;
+  -ms-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+.container .add-product .btn-add {
+  border: 1px solid #7FC5C1;
+  background-color: #79BBB7;
+  color: #fff;
+  font-size: 1.100em;
+  padding: 5px;
+  margin: 5px 0;
+  -webkit-transition: background-color 0.2s ease-out;
+  -moz-transition: background-color 0.2s ease-out;
+  -o-transition: background-color 0.2s ease-out;
+  -ms-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+}
+.container .add-product .btn-add:hover,
+.container .add-product .btn-add:focus {
+  cursor: pointer;
+  background-color: #8accc8;
+  -webkit-transition: background-color 0.2s ease-in;
+  -moz-transition: background-color 0.2s ease-in;
+  -o-transition: background-color 0.2s ease-in;
+  -ms-transition: background-color 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
+}
+.container .product-list {
+  width: 400px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  box-shadow: 0 0 15px #666;
+}
+.container .products {
+  padding: 15px 25px;
+}
+.container .product {
+  border-bottom: 1px solid #444;
+}
+.container .product .nameProduct {
+  background-color: #8BC8C4;
+  padding: 6px;
+  color: #fff;
+  position: relative;
+  text-transform: lowercase;
+}
+.container .product .nameProduct:first-letter {
+  text-transform: uppercase;
+}
+.container .product .nameProduct:hover {
+  cursor: pointer;
+}
+.container .product .product-moreinfo {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(200, 200, 200, 0.3);
+  color: #444;
+  padding: 5px 0;
+}
+.container .product .product-moreinfo .product-info {
+  flex: 1;
+}
