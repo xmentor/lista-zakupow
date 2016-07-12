@@ -14,55 +14,12 @@
         list.appendChild(newElement);
         newElement.classList.add("product");
         
-        newElement.innerHTML += "<p class='nameProduct'>" + this.name + "</p>" +
-                                "<div class='product-moreinfo'>" +
-                                    "<div class='product-info'>Ilość: " + this.how_much + " szt.</div>" +
-                                    "<div class='product-info'>Waga: " + this.weight + " g</div></div>";
-        /*
-        newElement.appendChild(paragraph);
-        paragraph.classList.add("nameProduct");
-        paragraph.innerHTML = this.name;
-        
-        newElement.appendChild(more_info);
-        more_info.classList.add("product-moreinfo");
-
-        more_info.appendChild(info_1);
-        info_1.classList.add("product-info");
-        info_1.innerHTML = "Ilość: " + this.how_much + " szt.";
-
-        more_info.appendChild(info_2);
-        info_2.classList.add("product-info");
-        info_2.innerHTML = "Waga: " + this.weight  + " g";
-        */
-    /*
-        list.innerHTML += "<li class='product'><p class='nameProduct'>" + this.name + "</p>" +
-                            "<div class='product-moreinfo'>" +
-                                "<div class='product-info'>Ilość: " + this.how_much + " szt.</div>" +
-                                "<div class='product-info'>Waga: " + this.wieght + " g</div></li>";
-    */
+        newElement.innerHTML += `<p class='nameProduct'>${this.name}</p>
+                                    <div class='product-moreinfo'>
+                                        <div class='product-info'>Ilość: ${this.how_much} szt.</div>
+                                        <div class='product-info'>Waga: ${this.weight} g</div>
+                                    </div>`;
     };
-    
-    /*
-    function searchProduct(nameProduct) {
-        var products = d.querySelectorAll(".nameProduct"),
-            len = products.length,
-            result = false;
-        
-        if (len < 1) {
-            result = true;
-        } else {
-            for (var i = 0; i < len; ++i) {
-                if (products[i].innerHTML === nameProduct) {  
-                    result = false;
-                    return;
-                } else {
-                    result = true;
-                }
-            }
-        }
-        return result;
-    }
-    */
     
     ProductDesc.prototype.searchProduct = function () {
         var products = d.querySelectorAll(".nameProduct"),
@@ -107,7 +64,27 @@
             t.parentNode.parentNode.removeChild(t.parentNode);
         }
     }, false);
-   
-    
     
 }(document));
+
+    /*
+    function searchProduct(nameProduct) {
+        var products = d.querySelectorAll(".nameProduct"),
+            len = products.length,
+            result = false;
+        
+        if (len < 1) {
+            result = true;
+        } else {
+            for (var i = 0; i < len; ++i) {
+                if (products[i].innerHTML === nameProduct) {  
+                    result = false;
+                    return;
+                } else {
+                    result = true;
+                }
+            }
+        }
+        return result;
+    }
+    */
