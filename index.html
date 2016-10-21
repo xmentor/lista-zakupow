@@ -2,39 +2,43 @@
 <html lang="pl">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--        <meta http-equiv="X-UA-Compatible" content="IE=edge">-->
         <title>Lista zakupów | Demo</title>
         <meta name="description" content="demo">
         <meta name="keywords" content="demo">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&subset=latin,latin-ext">
         <link rel="stylesheet" href="css/style.css">
-        <!--<link rel="stylesheet/less" href="css/style.less">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.6.1/less.min.js"></script>-->
     </head>
     <body>
-        <header class="header-page">
-            <h1 class="header-title">Moja lista zakupów | Demo</h1>
+        <header class="header">
+            <h1 class="header__title">Moja lista zakupów | Demo</h1>
         </header>
-        <div class="container">
-            <div class="add-product">
-                <h2 class="title">Dodaj produkt</h2>
-                <div class="inputs">
-                    <p>Nazwa produktu:</p>
-                    <input id="product-name" class="product-name">
-                    <p>Ilość(w szt.):</p>
-                    <input id="product-how_much" class="product-how_much" value="1">
-                    <p>Waga(w gramach):</p>
-                    <input id="product-weight" class="product-weight" value="0">
-                    <button id="btn-add" class="btn-add">Dodaj</button>
+        <main class="main">
+            <div class="container">
+                <div class="product-add">
+                    <h2 class="product-add__title">Dodaj produkt</h2>
+                    <div class="product-add__inputs product">
+                        
+                        <label for="product-name" class="product__label">Nazwa produktu:</label>
+                        <input id="product-name" class="product__input">
+                        
+                        <label for="product-how_much" class="product__label">Ilość(w szt.):</label>
+                        <input id="product-how_much" class="product__input" value="1">
+                        
+                        <label for="product-weight" class="product__label">Waga(w gramach):</label>
+                        <input id="product-weight" class="product__input" value="0">
+                        
+                        <button id="btn-add" class="product__btn">Dodaj</button>
+                    </div>
+                </div>
+                <div class="product-list">
+                    <h2 class="product-list__title">Lista produktów</h2>
+                    <ul id="products" class="product-list__list list"></ul>
                 </div>
             </div>
-            <div class="product-list">
-                <h2 class="title">Lista produktów</h2>
-                <ul id="products" class="products">
-                </ul>
-            </div>
-        </div>
+        </main>
         <script src="js/main.js"></script>
     </body>
 </html>
