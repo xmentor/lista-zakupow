@@ -1,0 +1,22 @@
+{
+  "name": "lista-zakupow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js/main.js",
+  "scripts": {
+    "lint": "eslint */**.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xmentor/lista-zakupow.git"
+  },
+  "author": "Kamil Kondratowicz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xmentor/lista-zakupow/issues"
+  },
+  "homepage": "https://github.com/xmentor/lista-zakupow#readme",
+  "devDependencies": {
+    "eslint": "^3.8.1"
+  }
+}

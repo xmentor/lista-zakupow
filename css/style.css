@@ -9,10 +9,10 @@ body {
   background: url("../img/restaurant.png") repeat;
   /* subtlepatterns.com */
 }
-.header-page {
+.header {
   margin: 25px 0;
 }
-.header-page .header-title {
+.header__title {
   font-size: 3.500em;
   font-weight: 700;
   text-align: center;
@@ -23,29 +23,28 @@ body {
   display: flex;
   justify-content: space-around;
 }
-.container .title {
+.product-add__title,
+.product-list__title{
   font-size: 2.000em;
   padding: 15px 0;
   color: #b5edea;
   text-transform: uppercase;
   background-color: #79AEAB;
 }
-.container .add-product {
+.product-add {
   width: 400px;
-  height: 297px;
+  height: 300px;
   background-color: #fff;
   box-shadow: 0 0 15px #555;
 }
-.container .add-product .inputs {
+.product-add__inputs {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 10px 25px;
+  padding: 10px 25px 0 25px;
   color: #333;
 }
-.container .add-product .product-name,
-.container .add-product .product-how_much,
-.container .add-product .product-weight {
+.product__input {
   margin-bottom: 5px;
   padding: 5px 10px;
   border: 1px solid #7FC5C1;
@@ -56,12 +55,8 @@ body {
   -ms-transition: box-shadow 0.2s ease-out;
   transition: box-shadow 0.2s ease-out;
 }
-.container .add-product .product-name:hover,
-.container .add-product .product-how_much:hover,
-.container .add-product .product-weight:hover,
-.container .add-product .product-name:focus,
-.container .add-product .product-how_much:focus,
-.container .add-product .product-weight:focus {
+.product__input:hover,
+.product__input:focus {
   box-shadow: 0 0 3px #7FC5C1;
   -webkit-transition: box-shadow 0.2s ease-in;
   -moz-transition: box-shadow 0.2s ease-in;
@@ -69,7 +64,7 @@ body {
   -ms-transition: box-shadow 0.2s ease-in;
   transition: box-shadow 0.2s ease-in;
 }
-.container .add-product .btn-add {
+.product__btn {
   border: 1px solid #7FC5C1;
   background-color: #79BBB7;
   color: #fff;
@@ -82,8 +77,8 @@ body {
   -ms-transition: background-color 0.2s ease-out;
   transition: background-color 0.2s ease-out;
 }
-.container .add-product .btn-add:hover,
-.container .add-product .btn-add:focus {
+.product__btn:hover,
+.product__btn:focus {
   cursor: pointer;
   background-color: #8accc8;
   -webkit-transition: background-color 0.2s ease-in;
@@ -92,38 +87,47 @@ body {
   -ms-transition: background-color 0.2s ease-in;
   transition: background-color 0.2s ease-in;
 }
-.container .product-list {
+.product-list {
   width: 400px;
+  min-height: 300px;
   background-color: #fff;
   margin-bottom: 10px;
   box-shadow: 0 0 15px #666;
 }
-.container .products {
+.product-list__list {
   padding: 15px 25px;
 }
-.container .product {
+.list__item {
   border-bottom: 1px solid #444;
+  position: relative;
 }
-.container .product .nameProduct {
+.product__name {
   background-color: #8BC8C4;
   padding: 6px;
   color: #fff;
   position: relative;
   text-transform: lowercase;
 }
-.container .product .nameProduct:first-letter {
+.product__name:first-letter {
   text-transform: uppercase;
 }
-.container .product .nameProduct:hover {
-  cursor: pointer;
+
+.product__remove{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
 }
-.container .product .product-moreinfo {
+.product__info {
   display: flex;
   flex-direction: row;
   background-color: rgba(200, 200, 200, 0.3);
   color: #444;
   padding: 5px 0;
 }
-.container .product .product-moreinfo .product-info {
+.product__info > div {
   flex: 1;
 }
