@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/xmentor/lista-zakupow#readme",
   "devDependencies": {
-    "eslint": "^3.8.1"
+    "eslint": "^6.6.0"
   }
 }
